@@ -1,16 +1,65 @@
 *{
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    box-sizing: border-box;
+    font-family: owsald, sans-serif;
+    transition: all 0.3s ease;
+
+}
 body{
     font-family: owsald, sans-serif;
     font-size: 1,6px;
+    text-align: center;
     line-height:normal;
-   color: white;
-}
-.index .texto{    
-}
+    color: rgb(255, 255, 255);
 
+    background-image:url(imagenes/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Oswald', sans-serif;
 
+.titulo{
+    background-color: #e30118;
+    color:#ffffff;
+    padding: 20px; 
+}
+.texto{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px;
+}
+.Formulario{
+    background-color: #e30118;
+    color: black;
+    padding: 40px;
+    border-radius: 50px;
+}
+}
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0;
+    color: #e30118
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 6px
+    rgba(0, 0, 0, 0.7);
+
+    background-color: #0d47a1;
+    padding 15px 30px
+    border-radius 8px;
+    display inline-block;
+}
+.texto{
+    max-width: 800px;
+    margin: auto;
+    texto-align: justify;
+    line-height: 1.6;
+}
 server image {
     width: 80%;
     height: auto;
@@ -26,15 +75,25 @@ nav ul li{
     list-style: none;
     justify-content: center;
 }
-nav ul li a{
+nav ul li a {
     font-family: owsald, sans-serif;
-    color:rgb(255, 255, 255)
+    text-decoration: none;
+    font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  background-color: #0d47a1;
+  transition: 0.3s;
+  display: inline-block;
 }
-
+nav ul li a:hover {
+  background-color: #e10600; 
+  color: #ffcc00;     
+  transform: scale(1.05);
+}
 section{
 padding: 32px 0;
 }
-
 section h2, section h3, section h4 ul{
     text-align: center;
     color: rgb(255, 255, 255);
@@ -43,7 +102,6 @@ section h2, section h3, section h4 ul{
     width: 80%;
     height: auto;
     margin: 20px 10%;
-
 }
 form{
     display: flex;
@@ -61,7 +119,7 @@ form textarea,
 form select {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   font-size: 1rem;
 }
 form button {
